@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head runat="server">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/assets/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="/images/tgstrans3.png" />
+	<script src="/assets/script.js"></script>
+	<title>The Restaurant Manager</title>
+	<style type="text/css">
+        #timeOut
+        {
+            background-color: yellow;
+			color: black;
+			font-size:1.25em;
+        }
+    </style>
+    <script type="text/javascript">
+        var IdealTimeOut = 10; //10 seconds
+        var idleSecondsTimer = null;
+        var idleSecondsCounter = 0;
+        document.onclick = function () { idleSecondsCounter = 0; };
+        document.onmousemove = function () { idleSecondsCounter = 0; };
+        document.onkeypress = function () { idleSecondsCounter = 0; };
+        idleSecondsTimer = window.setInterval(CheckIdleTime, 1000);
+ 
+        function CheckIdleTime() {
+            idleSecondsCounter++;
+            var oPanel = document.getElementById("timeOut");
+            if (oPanel) {
+                oPanel.innerHTML = (IdealTimeOut - idleSecondsCounter);
+            }
+            if (idleSecondsCounter >= IdealTimeOut) {
+                window.clearInterval(idleSecondsTimer);
+				alert("Your Session has expired. Please login again.");
+                window.location = "http://localhost:3000/login";
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        var IdealTimeOut = 10; //10 seconds
+        var idleSecondsTimer = null;
+        var idleSecondsCounter = 0;
+        document.onclick = function () { idleSecondsCounter = 0; };
+        document.onmousemove = function () { idleSecondsCounter = 0; };
+        document.onkeypress = function () { idleSecondsCounter = 0; };
+        idleSecondsTimer = window.setInterval(CheckIdleTime, 1000);
+ 
+        function CheckIdleTime() {
+            idleSecondsCounter++;
+            var oPanel = document.getElementById("timeOut");
+            if (oPanel) {
+                oPanel.innerHTML = (IdealTimeOut - idleSecondsCounter);
+            }
+            if (idleSecondsCounter >= IdealTimeOut) {
+                window.clearInterval(idleSecondsTimer);
+				alert("Your Session has expired. Please login again.");
+                window.location = "http://localhost:3000/login";
+            }
+        }
+    </script>
+</head>
+<body>
+	<!--Toolbar-->
+	<div class="toolbar">
+		<a href="/index" class="logoLink">
+			<img class="toolbarImage" src="images/tgstrans2.png">
+			<span class="tgslogo"> Our Restaurant</span>
+		</a>
+		<ul class="toolbarList">
+			<li><a href="/menu" class="toolbarLink">MENU</a></li><span class="pipe">  |  </span>
+			<li><a href="/location" class="toolbarLink">LOCATION</a></li><span class="pipe"> | </span>
+			<li><a href="/reservation" class="toolbarLink">RESERVATION</a></li><span class="pipe"> | </span>
+			<li><a href="/about" class="toolbarLink">ABOUT US</a></li>
+		</ul>
+		<ul class="toolbarList2">
+			<!-- <li><a href="/cart" class="toolbarLink">CART &nbsp<i class="fa fa-shopping-cart"></i></a></li><span class="pipe"> |</span> -->
+			<li id=user><a href="/login" class="toolbarLink">LOGIN &nbsp<i class="fa fa-user"></i></a></li>
+		</ul>
+	</div>
+	<!--EndToolbar-->
+	<form id="form1" runat="server">
+		<div>
+			You will be auto logged out in <span id="timeOut"></span> seconds.
+		</div>
+	</form>
+	<!--Image 1-->
+	<div class="parallax5">
+		<!--<img src="images/parallax5.jpg" width="100%" alt="Image Unavailable">-->
+		<div class="textOverlay">
+			<div class="text1">OUR STORY</div>
+			<div class="text2"><b>___________</b></div>
+			<br>
+			<div class="text3"><b>VIT VELLORE</b></div>
+		</div>
+	</div>
+	<!--Text1-->
+	<div class="aboutText">	 
+		<div class="aboutText1">
+			<div>Where is all started?</div>
+			<div>“Just three students of VIT, Vellore trying to</div>
+			<div>evolve the Restaurant Industry"</div>
+		</div><br>
+		<div class="aboutText2">
+			VIT University Vellore is a privately-held deemed university located in Vellore, Tamil Nadu. The university began its journey as an engineering college in 1984 with 3 branches under the Madras University. <br><br> 
+			With excellence as its backbone, the college gained deemed university status in 2001. Today, VIT University offers 20 UG and 34 PG programs and is described as one of the country’s finest universities in engineering.
+		</div>
+	</div>
+	<!--Image 2-->
+	<div class="parallax6">
+		<!--<img src="images/parallax6.jpg" width="100%" alt="Image Unavailable">-->
+		<div class="textOverlay">
+			<div class="funFact1">FUN FACT:</div>
+			<div class="funFact2"><span class="funFact3"><b>Why US? </b></span>An extra element in our venture is the table reservation. The customer can book a table at the restaurant as per their reasonable time and number of individuals by checking the accessibility and opening. </div>
+		</div>
+	</div>
+	<!--Text2-->
+	<div class="aboutText">	 
+		<div class="aboutText1">
+			<div>What makes us so</div>
+			<div>Special?</div>
+		</div><br>
+		<div class="aboutText2">
+			Restaurants are the sort of businesses that serve individuals everywhere throughout the world through instant nourishment by providing meals and beverages. <br><br>
+			Customers can give additional instructions on the site for their reservations or orders. For example, if a parent wants to celebrate their child’s birthday they can request the restaurant to set up balloons, cake and other birthday decorations before their arrival.<br><br>
+			Discounts can be given to the customer after they have ordered from us a certain amount of times. <br><br>
+			Customers can opt for valet parking beforehand when they make reservations so that they have the valet waiting for them when they arrive.<br><br>
+			The website displays the locations of the seats so that the customer can choose where they want to sit in the restaurant. This is much more convenient then the existing system in which the only thing that the customers can choose is the number of seats at the table. The user can also book a table at the restaurant according to their suitable time and number of people by checking the availability and vacancy. It also shows you which seats are already reserved so that you can make your choice accordingly. <br><br>
+			Not only that, it has full 360 virtual view so you can decide the environment of your sitting!
+		</div>
+	</div>
+	<!--Newsletter-->
+	<div style="text-align:center;font-family:Verdana;padding:50px 0px;">
+		<div>SIGN UP FOR OUR NEWSLETTER!</div><br>
+		<div>
+			<form method="POST" action="/subscribe">
+				<input type="email" placeholder="EMAIL*" class="mail" name="mailid" required>
+				<input type="submit" value="SUBSCRIBE" class="button1">
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var user = '<%= user %>';
+			if(user!=''){
+			user = user.split('@');
+			user = user[0];
+			user = user[0].toUpperCase() + user.slice(1); 
+			user = 'Hi '+user+'!';
+			document.getElementById('user').className = 'dropdown';
+			var dropdown = user+' &nbsp<i class="fa fa-chevron-down"></i><div class="dropdown-content"><a href="/profile">Profile</a><a href="/cart">Cart</a><a href="/orders">Orders</a><a href="/logout">Logout</a></div>';
+			document.getElementById('user').innerHTML = dropdown;
+		} 
+	</script>
+</body>
+</html>

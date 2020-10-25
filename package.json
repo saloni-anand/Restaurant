@@ -1,0 +1,25 @@
+{
+  "name": "therestaurant",
+  "version": "1.0.0",
+  "description": "Internet and web programming project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "author": "Saloni Anand",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "express-session": "^1.16.2",
+    "jquery": "^3.5.1",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.6.11",
+    "nodemailer": "^6.4.14",
+    "nodemon": "^2.0.6"
+  }
+}
