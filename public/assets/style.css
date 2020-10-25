@@ -361,7 +361,6 @@ input.formbutton{
     -webkit-animation: myfirst 2s ; /* Chrome, Safari, Opera */
     animation: myfirst 2s ;
 }
-
 /* Chrome, Safari, Opera */
 @-webkit-keyframes myfirst {
     from {opacity: 0.2;}
