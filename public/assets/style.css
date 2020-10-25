@@ -39,22 +39,6 @@ a.logoLink:active{
 	text-decoration:none;
 	color:rgba(155,155,155,1);
 }
-a.toolbarLink:link{
-	text-decoration:none;
-	color:rgba(144,136,124,1);
-}
-a.toolbarLink:visited{
-	text-decoration:none;
-	color:rgba(144,136,124,1);
-}
-a.toolbarLink:hover{
-	text-decoration:none;
-	color:rgba(174,134,72,1);
-}
-a.toolBarLink:active{
-	text-decoration:none;
-	color:rgba(155,155,155,1);
-}
 .toolbarList{
 	display:inline-block;
 	font-family:Verdana;
@@ -146,9 +130,6 @@ input.button1:hover{
 a.button2:hover, span.button2:hover, .button2:hover{
     color:rgba(255,255,255,1);
     background-color:rgba(143,38,38,1);
-}
-.cursiveContainer{
-    padding:100px 0px;
 }
 .cursive{
 	text-align:center;
@@ -284,9 +265,6 @@ a.button2:hover, span.button2:hover, .button2:hover{
     display: inline-block;
     float: right;
 }
-.forgotPassword:link{
-    color: rgba(204, 0, 0, 1);
-}
 .login .signupButton{
     text-overflow:auto;
     padding:0px 20px 20px;
@@ -321,7 +299,6 @@ select.formele{
 }
 input[type=text]:focus, input[type=number]:focus, input[type=address]:focus, input[type=email]:focus, input[type=password]:focus {
 	border:2px solid rgba(143,38,38,1);
-	/*border-color:rgba(143,38,38,1);*/
 }
 input[type=submit]:hover, input[type=reset]:hover {
 	background-color:rgba(143,38,38,1);
@@ -343,18 +320,8 @@ input.formbutton{
 .aboutText{
     padding:100px 0px;
     background-color:rgba(255,255,255,1);
-    /*font-family:"Monotype Corsiva";*/
     font-size:1.3em;
     color:rgba(0,0,0,1);
-}
-.aboutText1{
-    text-align:center; 
-    font-family:Monotype Corsiva; 
-    font-size:2.4em;
-}
-.aboutText2{
-    width:50%; 
-    margin:auto;
 }
 .funFact1{
     font-size:3em;
@@ -368,17 +335,6 @@ input.formbutton{
     font-family:Monotype Corsiva; 
     font-size:1.8em;
 }
-.rotPlus{
-    float:right;
-    width:50px; 
-    z-index:100;
-    transition-property:transform;
-    transition-duration:1s;
-    transition-timing-function:linear;
-}
-.rotPlus:hover{
-    transform:rotate(225deg);
-}
 .menuHeading{
     color:rgba(0,0,0,1);
     background-color:rgba(255,255,255,1);
@@ -387,17 +343,6 @@ input.formbutton{
     text-align:center;
     padding:120px;
     border:1px rgba(0,0,0,0.15) solid;
-}
-.meal{
-    position:relative; 
-    left:3%;
-}
-.menuItem{
-    float:right; 
-    padding-right:15px;
-}
-.submitMenu{
-    text-align:center;
 }
 #m1 #m2 #m3 #m4 #m5{
     transition: background 2s, color 2s;
@@ -497,52 +442,15 @@ input.formbutton{
     animation: myfirst 2s ;
 }
 
-/* Chrome, Safari, Opera */
 @-webkit-keyframes myfirst {
     from {opacity: 0.2;}
     to {opacity: 1;}
 }
-#items1{
+#items1, #item2, #item3, #item4, #item5{
     color:rgba(142,23,23,1);
     font-family:Verdana;
     font-size:1.2em;
     /*text-align:center;*/
-    background-color:rgba(255,255,255,1);
-    padding:15px;
-    display:none;
-}
-#items2{
-    color:rgba(142,23,23,1);
-    font-family:Verdana;
-    font-size:1.2em;
-    
-    background-color:rgba(255,255,255,1);
-    padding:15px;
-    display:none;
-}
-#items3{
-    color:rgba(142,23,23,1);
-    font-family:Verdana;
-    font-size:1.2em;
-    
-    background-color:rgba(255,255,255,1);
-    padding:15px;
-    display:none;
-}
-#items4{
-    color:rgba(142,23,23,1);
-    font-family:Verdana;
-    font-size:1.2em;
-    
-    background-color:rgba(255,255,255,1);
-    padding:15px;
-    display:none;
-}
-#items5{
-    color:rgba(142,23,23,1);
-    font-family:Verdana;
-    font-size:1.2em;
-    
     background-color:rgba(255,255,255,1);
     padding:15px;
     display:none;
@@ -585,13 +493,7 @@ li input{
     opacity: 0;
     transition: .5s ease;
     background-color:rgba(180,180,180,0.8);
-    /*background-color:rgba(174,134,72,0.8);*/
 }
-
-.locationContainer:hover .locationOverlay {
-    opacity: 1;
-}
-
 .locationText {
     color: rgba(0,0,0,1);
     font-size:2em;
@@ -607,12 +509,6 @@ li input{
 .locationText1{
     font-size:6em;
     font-family:Bahnschrift Condensed;
-}
-.locationText2{
-    font-size:2em;
-}
-.locationText3{
-    font-size:1.2em;
 }
 .callUs{
     font-size:1.5em; 
@@ -634,10 +530,6 @@ li input{
 #login2order a:hover{
     text-decoration: none;
     cursor: pointer;
-}
-.addr{
-    font-size:0.8em;
-    font-family:Monotype Corsiva;
 }
 .cart{
 	font-family: Verdana;
@@ -667,14 +559,6 @@ td, th{
     border: 1px solid rgba(150,150,150,1);
     color: rgba(200,200,200,1);
 }
-table span{
-    cursor:pointer
-}
-.payment{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
 .creditcard{
     padding:20px;
     margin:auto;
@@ -700,7 +584,6 @@ table span{
 }
 .subscribeMessage{
     color: rgba(255, 140, 26, 1);
-    /*color:rgba(143,38,38,1);*/
 }
 .error404{
    font-size: 48px;
@@ -741,12 +624,6 @@ table span{
 .dropdown-content a:hover{
     background-color: rgba(241,241,241,1);
 }
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.noItems{
-    text-align: center;
-}
 #alert{
   padding: 20px;
   background-color: rgba(220,220,220,1);;
@@ -783,7 +660,6 @@ table span{
   font-size: 1em;
   display: none;
 }
-
 .closebtn {
   margin-left: 15px;
   color: rgba(0,0,0,1);;
@@ -794,11 +670,9 @@ table span{
   cursor: pointer;
   transition: 0.3s;
 }
-
 .closebtn:hover {
   color: rgba(255,0,0,1);
 }
-
 .profile {
     color: rgba(180,180,180,1);
     padding:20px;
@@ -809,16 +683,10 @@ table span{
     position:absolute;
     transform: translate(70%, 50%);
 }
-#FNAME, #LNAME, #EMAIL, #PHNUMBER, #NEWSLETTER, #edit{
-    margin-left: 20%;
-}
 #fname, #lname, #email, #phnumber, #newsletter{
     position: absolute;
     left: 60%;
     color: rgba(255,255,255,1);
-}
-.editProfile{
-    display: none;
 }
 table.room{
     border: 0px;
